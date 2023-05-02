@@ -2,16 +2,33 @@ body {
     font-family: 'Courier New', Courier, monospace;
   }
   
-  img {
+img {
     width: 100px;
     height: 100px;
+    align-self: center;
   }
   
-  .title {
+.title {
     font-size: 36px;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
-  
+.text{
+    text-align: center;
+  }
+.container{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-content: space-between;
+}
+card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
   /* do not edit this footer */
   .footer {
     position: fixed;
