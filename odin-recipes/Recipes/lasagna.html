@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasagna</title>
+    <link rel="stylesheet" href="..\style.css">
 </head>
 <body>
-    <h1>Lasagna</h1>
-<img src="..\images\lasagna.png"/>
-<h3>Description:</h3>
+    <h1 class="foodtitle">Lasagna</h1>
+<img class="foodimg" src="..\images\lasagna.png"/>
+<div class="description">
+<h3 id="description">Description:</h3>
 
-<ul aria-label="Ingredients:">
+<ul class="ingredients" aria-label="Ingredients:">
     <li>Meat</li>
     <li>Onion</li>
     <li>Canned Tomatoes</li>
@@ -22,7 +24,7 @@
     <li>Cheese</li>
     <li>Eggs</li>
 </ul>
-<ol aria-label="Steps:">
+<ol class="steps" aria-label="Steps:">
 
     <li><b>Cook the meat:</b></li>
         <p>Cook the ground meat in a skillet until browned and crumbly. <br> 
@@ -37,5 +39,6 @@
     <li><b>Bake the lasagna:</b></li>   
     <p>Cover with foil and bake in the preheated oven for about half an hour. Remove the foil and continue baking until the top is golden brown.</p>
 </ol>
+</div>
 </body>
 </html>

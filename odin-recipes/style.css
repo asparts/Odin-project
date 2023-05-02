@@ -1,0 +1,26 @@
+#odin-recipes{
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#odin-recipes ul{
+    display: inline-block;
+    text-align: left;
+    
+}
+#odin-recipes ul li{
+    margin-bottom: 10px;
+}
+
+.foodtitle{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.foodimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
