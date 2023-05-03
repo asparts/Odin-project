@@ -73,3 +73,42 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+
+.content-2-text{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.content-2 .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+
+}
+.content-2 .card-container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+.card-text{
+    color: #1F2937;
+} 
+.content-2 img{
+    width:160px;
+    height: 160px;
+    border-radius: 15px;
+    border: solid 5px;
+    border-color: #3882F6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
