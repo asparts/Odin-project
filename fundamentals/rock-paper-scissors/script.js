@@ -140,10 +140,3 @@ function playRound(playerSelection){
         results.innerText = "Computer reaches 5 points and wins the game!";
     }
 }
-
-
-function game()
-{
-    
-    
-}
