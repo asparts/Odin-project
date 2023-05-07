@@ -1,5 +1,20 @@
 
+window.onload = function (){
 
+    var rockBtn = document.getElementById('rock-button');
+    var paperBtn = document.getElementById('paper-button');
+    var scissorsBtn = document.getElementById('scissors-button');
+
+    rockBtn.onclick = function(){
+        playRound(1)
+    };
+    paperBtn.onclick = function(){
+        playRound(2)
+    };
+    scissorsBtn.onclick = function(){
+        playRound(3)
+    };
+}
 function getComputerChoice(){
 
     var choice = Math.floor(Math.random() * 3) +1;
@@ -43,58 +58,92 @@ function choiceToString(choice)
     }
 }
 
-function playRound(playerSelection, computerSelection){
+function playRound(playerSelection){
 
-    
+    var computerSelection = getComputerChoice();
 
-    console.log("Player selected: " + choiceToString(playerSelection));
-    console.log("Computer selected: " + choiceToString(computerSelection));
+    var results = document.getElementById('results-text');
+    var computer_score = document.getElementById('computer-score');
+    var comp_score_int = parseInt(computer_score.innerText);
+    var player_score = document.getElementById('player-score');
+    var play_score_int = parseInt(player_score.innerText);
+
+    results.innerText = "Player selected: " + choiceToString(playerSelection) + "\nComputer selected: " + choiceToString(computerSelection);
 
     if(playerSelection === computerSelection)
     {
-        console.log("TIE!");
+        results.innerText += "\nTIE!"
     }
     else if(playerSelection == 1){
         if(computerSelection == 2)
         {
-            console.log("Computer wins!");
+            results.innerText += "\nComputer wins!"
+            computer_score.innerText = "";
+            computer_score.innerText = comp_score_int + 1;
+            comp_score_int++;
         }
         else
         {
-            console.log("Player wins!");
+            results.innerText += "\nPlayer wins!"
+            player_score.innerText = "";
+            player_score.innerText = play_score_int + 1;
+            play_score_int++;
         }
     }
     else if(playerSelection == 2){
         if(computerSelection == 3)
         {
-            console.log("Computer wins!");
+            results.innerText += "\nComputer wins!"
+            computer_score.innerText = "";
+            computer_score.innerText = comp_score_int + 1;
+            comp_score_int++;
         }
         else
         {
-            console.log("Player wins!");
+            results.innerText += "\nPlayer wins!"
+            player_score.innerText = "";
+            player_score.innerText = play_score_int + 1;
+            play_score_int++;
         }
     }
     else if(playerSelection == 3){
         if(computerSelection == 1)
         {
-            console.log("Computer wins!");
+            results.innerText += "\nComputer wins!"
+            computer_score.innerText = "";
+            computer_score.innerText = comp_score_int + 1;
+            comp_score_int++;
         }
         else
         {
-            console.log("Player wins!");
+            results.innerText += "\nPlayer wins!"
+            player_score.innerText = "";
+            player_score.innerText = play_score_int + 1;
+            play_score_int++;
         }
+    }
+
+    if(play_score_int === 5)
+    {
+        play_score_int = 0;
+        comp_score_int = 0;
+        player_score.innerText = play_score_int;
+        computer_score.innerText = comp_score_int;
+        results.innerText = "Player reaches 5 points and wins the game!";
+    }
+    else if(comp_score_int === 5)
+    {
+        play_score_int = 0;
+        comp_score_int = 0;
+        player_score.innerText = play_score_int;
+        computer_score.innerText = comp_score_int;
+        results.innerText = "Computer reaches 5 points and wins the game!";
     }
 }
 
-function fiveRounds()
+
+function game()
 {
-    for(var i = 0; i < 5; i++)
-    {
-        const playerSelection = getPlayerChoice();
-        const computerSelection = getComputerChoice();
-        
-        playRound(playerSelection, computerSelection);
-    }
+    
     
 }
-fiveRounds();
