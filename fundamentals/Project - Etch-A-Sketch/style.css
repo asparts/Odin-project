@@ -1,0 +1,124 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e6e6ea;
+}
+#header{
+    height: 100px;
+    background-color: 	#fed766;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color:#000000;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #grid-container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), minmax(0, 1fr));
+    grid-template-columns: repeat(var(--grid-cols), minmax(0, 1fr));
+    height: 600px;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item {
+    padding: 1px;
+    border: 1px solid;
+    border-color:  #ddd;
+    background-color: white;
+  }
+  /* .grid-item:hover{
+    
+    background-color: red;
+  } */
+  #drawing-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #side-panel{
+    height: 400px;
+    width: 250px;
+    background-color: #fed766;
+    margin-right: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+  }
+  #color-button{
+     /* display: none;  */
+     visibility: hidden;
+  }
+  #color-span{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 7px solid #000000;
+    background-color: #fe4a49;
+    display: inline-block;
+    margin-top:30px;
+  }
+  #new-btn{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top:30px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #2ab7ca;
+    border: 2px solid #000000;
+    border-radius: 80%;
+  }
+  #new-btn:hover{
+    background-color:  #25a8b9;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  #clear-btn{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top:30px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #2ab7ca;
+    border: 2px solid #000000;
+    border-radius: 80%;
+  }
+  #clear-btn:hover{
+    background-color: #25a8b9;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  #footer{
+    height: 100px;
+    background-color: 	#fed766;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color:#000000;
+
+}
