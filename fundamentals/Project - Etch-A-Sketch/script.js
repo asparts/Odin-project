@@ -38,6 +38,9 @@ function resetGrid(){
 function newGrid(){
 
     var sizeString = prompt("Please give size for the new grid. Minimum is 16, maximum is 100.");
+    if(sizeString === null)
+        return;
+    
     var size = parseInt(sizeString);
     if(!isNaN(size.value))
     {
