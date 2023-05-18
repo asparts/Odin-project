@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+            <div id="text-area">
+                <span id="text-area-text"></span>
+            </div>
+        <div id="button-container">
+            <div class="btn" id="IO-btn" onclick="odinProject()"><img src="img/odin.png"/></div>
+            <div class="btn" id="C-btn" onclick="clearClick()">C</div>
+            <div class="btn" id="back-btn" onclick="backBtnClick()">&DoubleLeftArrow;</div>
+            <div class="btn" id="divide-btn" onclick="operatorClick('/')">&divide;</div>
+            <div class="btn" id="7-btn" onclick="numClick(7)">7</div>
+            <div class="btn" id="8-btn" onclick="numClick(8)">8</div>
+            <div class="btn" id="9-btn" onclick="numClick(9)">9</div>
+            <div class="btn" id="X-btn" onclick="operatorClick('*')">X</div>
+            <div class="btn" id="4-btn" onclick="numClick(4)">4</div>
+            <div class="btn" id="5-btn" onclick="numClick(5)">5</div>
+            <div class="btn" id="6-btn" onclick="numClick(6)">6</div>
+            <div class="btn" id="--btn" onclick="operatorClick('-')">-</div>
+            <div class="btn" id="1-btn" onclick="numClick(1)">1</div>
+            <div class="btn" id="2-btn" onclick="numClick(2)">2</div>
+            <div class="btn" id="3-btn" onclick="numClick(3)">3</div>
+            <div class="btn" id="+-btn" onclick="operatorClick('+')">+</div>
+            <div class="btn" id="0-btn" onclick="numClick(0)">0</div>
+            <div class="btn" id="equals-btn" onclick="operate()">=</div>
+        </div>
+    </div>
+</body>
+</html>
